@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: Playfair Display, serif;
+  --color-primary: #2D3142;
+  --color-secondary: #EAEBEC;
+  --color-accent: #CF8020;
+}
+
+@theme {
+  --font-serif: Ubuntu Sans, serif;
+  --font-sans: Ubuntu Sans, serif;
+  --font-mono: Afacad, serif;
+  --color-primary: #414F59;
+  --color-secondary: #E0DFD5;
+  --color-accent: #E2A86B;
+  --color-dark: #2C2F34;
+  --color-light: #E8E9EB;
+}
+
+:root {
+  font-family: Afacad, serif, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: var(--color-dark);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+section {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+a:hover {
+  color: var(--color-accent);
+}
+
+button {
+  cursor: pointer;
+}
+
+h2 {
+  text-transform: lowercase;
+  font-weight: 100;
+  font-family: Afacad, serif;
+}
+
+header {
+  background-color: var(--color-dark);
+}
+
+.folder-mask {
+  -webkit-mask: url(../public/img/shape-1.svg) center / contain no-repeat, linear-gradient(#000000 0 0);
+  mask-size: 14rem;
+  mask-position: 10rem 100%;
+  mask-composite: exclude;
+}
+
+.rounded-section {
+  border-radius: 3.2rem;
+}
