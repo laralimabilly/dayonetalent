@@ -29,7 +29,7 @@ export default function Hero() {
               transition={{ delay: 0.4 }}
               className="text-lg md:text-xl mb-8 text-secondary/80 max-w-2xl"
             >
-              Our executive search process combines deep industry insight with precise talent matching, ensuring your organization finds the transformative leadership it needs.
+              Our Talent Advisory and Executive Search firm is specialized in building AI ready leadership teams for companies undergoing expansion, transformation, and market entry.
             </motion.p>
             
             <motion.div 

@@ -1,6 +1,11 @@
 import { User, Mail, Phone, Building, MessageSquare } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
+import parse from 'html-react-parser';
 
 const ContactSection = () => {
+
+  const {t} = useTranslation();
+
   return (
     <section className="bg-dark py-24 text-secondary">
       <div className="container mx-auto px-6">
@@ -8,13 +13,13 @@ const ContactSection = () => {
           {/* Contact information */}
           <div className="lg:w-1/3">
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-[#E2A86B]">
-              Get in touch
+              {t('contact.h2')}
             </h2>
             <h3 className="text-xl mb-6 text-[#E0DFD5]">
-              Let's discuss how our HR solutions can help your business
+              {t('contact.h3')}
             </h3>
             <p className="text-secondary/80 mb-8">
-              Reach out to our team to learn more about our services or to schedule a consultation. We're ready to help you optimize your HR operations.
+              {t('contact.p')}
             </p>
             
             <div className="bg-[#414F59]/30 p-6 rounded-xl border border-[#414F59] relative overflow-hidden mb-8">
@@ -27,8 +32,8 @@ const ContactSection = () => {
                     <Mail size={18} className="text-[#E2A86B]" />
                   </div>
                   <div>
-                    <h4 className="font-medium text-secondary">Email</h4>
-                    <p className="text-[#E0DFD5]/80">contact@hrcompany.com</p>
+                    <h4 className="font-medium text-secondary">{t('contact.label.email')}</h4>
+                    <p className="text-[#E0DFD5]/80">fernanda.amorim@dayonetalent.com</p>
                   </div>
                 </div>
                 
@@ -37,8 +42,8 @@ const ContactSection = () => {
                     <Phone size={18} className="text-[#E2A86B]" />
                   </div>
                   <div>
-                    <h4 className="font-medium text-secondary">Phone</h4>
-                    <p className="text-[#E0DFD5]/80">+1 (555) 123-4567</p>
+                    <h4 className="font-medium text-secondary">{t('contact.label.phone')}</h4>
+                    <p className="text-[#E0DFD5]/80">+55 11 99712-7227</p>
                   </div>
                 </div>
                 
@@ -47,8 +52,8 @@ const ContactSection = () => {
                     <Building size={18} className="text-[#E2A86B]" />
                   </div>
                   <div>
-                    <h4 className="font-medium text-secondary">Office</h4>
-                    <p className="text-[#E0DFD5]/80">123 Business Ave, Suite 456<br />New York, NY 10001</p>
+                    <h4 className="font-medium text-secondary">{t('contact.label.office')}</h4>
+                    <p className="text-[#E0DFD5]/80">{parse(t('contact.address'))}</p>
                   </div>
                 </div>
               </div>

@@ -64,7 +64,7 @@ header {
 .folder-mask {
   -webkit-mask: url(../public/img/shape-1.svg) center / contain no-repeat, linear-gradient(#000000 0 0);
   mask-size: 14rem;
-  mask-position: 10rem 100%;
+  mask-position: 10rem 100.1%;
   mask-composite: exclude;
 }
 
